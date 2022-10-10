@@ -1,10 +1,14 @@
-const  express = require('express')
+const  express = require('express');
+const { body } = require('express-validator');
 const app = express();
 const connectDB = require('./config/db');
 const router = express.Router();
 
 //connect  Database  
 connectDB();
+
+//init Middleware
+app.use(express.json({ extended: false }));
 //running the sever on the default port , by default port  5000
 const port = process.env.PORT || 5000
 //sending the req and res is the http req is conneted  
