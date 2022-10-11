@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://manavnim:manav123@devconnect.os5xoff.mongodb.net/?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://manavnim:manav123@devconnect.os5xoff.mongodb.net/?retryWrites=true&w=majority", 
+    "jwtSecret": "randomvalue"
 }
