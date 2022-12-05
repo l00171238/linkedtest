@@ -57,7 +57,8 @@ router.post('/',
          //return jsonwebtoken
         const payload = {
           user: {
-             id: user.id
+            id: user.id,
+            user:  user
            }
         }
         //jwt sign  including payload, token Secrete and expire date
